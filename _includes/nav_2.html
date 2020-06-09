@@ -49,9 +49,9 @@
         {%- else -%}
           {%- assign _class = 'icon' -%}
         {%- endif -%}
-        {%- assign _page.url = {{page.url | absolute_url}} -%}
+        {%- assign _page.url = {{ page.url | absolute_url }} -%}
         {%- if _url == _page.url -%}
-        <li><a href="#" id="{{- _slug -}}-link" class="scrolly active"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
+        <li><a href="#" id="{{- _slug -}}-link" class="active"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
         {%- else -%}
         <li><a href="{{- _url -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
         {%- endif -%}
