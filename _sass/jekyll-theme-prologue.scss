@@ -528,9 +528,10 @@
 
 	#logo {
 		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
+		padding: 1.75em 1.5em 1.5em 1.5em;
 		min-height: 48px;
 		cursor: default;
+		background: black;
 
 		a {
 			border: 0;
@@ -814,7 +815,7 @@
 			#logo {
 				.image {
 					position: relative;
-					margin: 0 0 0.5em 0;
+					padding : 0 0 0.5em 0;
 				}
 			}
 
@@ -934,7 +935,7 @@
 			}
 
 			#logo {
-				margin: 1.5em 1.25em 1.25em 1.25em;
+				padding: 1.5em 1.25em 1.25em 1.25em;
 			}
 
 			#nav {
