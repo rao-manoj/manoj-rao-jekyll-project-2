@@ -532,6 +532,7 @@
 		min-height: 48px;
 		cursor: default;
 		background: black;
+		text-align: center;
 
 		a {
 			border: 0;
@@ -555,7 +556,7 @@
 		}
 
 		.image {
-			position: absolute;
+			position: relative;
 			left: 0;
 			top: 0;
 		}
