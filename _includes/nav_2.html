@@ -41,7 +41,7 @@
         {%- assign _title = _sect.title | default: _sect.layout | default: 'Untitled' -%}
         {%- assign _slug = _title | slugify -%}
         {%- assign _icon = _sect.icon | default: 'fa-file' -%}
-        {%- assign _url = page.url| absolute_url' -%}
+        {%- assign _url = _sect.page.url| absolute_url' -%}
         {%- if _sect.icon-style == 'regular' -%}
           {%- assign _class = 'icon-r' -%}
         {%- elsif _sect.icon-style == 'brands' -%}
