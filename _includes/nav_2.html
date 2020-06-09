@@ -41,6 +41,7 @@
         {%- assign _title = _sect.title | default: _sect.layout | default: 'Untitled' -%}
         {%- assign _slug = _title | slugify -%}
         {%- assign _icon = _sect.icon | default: 'fa-file' -%}
+        {%- assign _url = page.url| absolute_url' -%}
         {%- if _sect.icon-style == 'regular' -%}
           {%- assign _class = 'icon-r' -%}
         {%- elsif _sect.icon-style == 'brands' -%}
@@ -48,7 +49,7 @@
         {%- else -%}
           {%- assign _class = 'icon' -%}
         {%- endif -%}
-        <li><a href="{{ page.url | absolute_url }}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
+        <li><a href="{{- _url -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
       {%- endfor -%}
     {%- endunless -%}
   </ul>
