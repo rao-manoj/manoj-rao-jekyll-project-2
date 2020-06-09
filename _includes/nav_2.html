@@ -49,7 +49,7 @@
         {%- else -%}
           {%- assign _class = 'icon' -%}
         {%- endif -%}
-        {%- if _url == post.url | absolute_url -%}
+        {%- if _url == {{post.url | absolute_url}} -%}
         <li><a href="#" id="{{- _slug -}}-link" class="scrolly active"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
         {%- else -%}
         <li><a href="{{- _url -}}" id="{{- _slug -}}-link" class="scrolly"><span class="{{ _class }} {{ _icon }}">{{- _title -}}</span></a></li>
