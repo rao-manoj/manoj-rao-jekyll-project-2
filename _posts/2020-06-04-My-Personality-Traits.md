@@ -2,7 +2,7 @@
 title: My Personality traits
 author: Manoj
 layout: post
-collections: blog
+category : blog
 icon: fa-lightbulb
 icon-style: regular
 ---
