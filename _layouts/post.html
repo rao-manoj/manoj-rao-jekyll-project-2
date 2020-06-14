@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{%- assign _posts = site.posts | sort: 'date' | reverse -%}
+{%- assign _posts = site.posts | sort: 'date' | reverse | where: "category","blog"  -%}
 {%- include header_2.html scrolly_nav=_posts -%}
 
 <!-- Main -->
