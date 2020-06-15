@@ -1,10 +1,12 @@
 ---
 title: Third Post
+date: 2014-09-12 00:00:00 Z
 author: Chris
 layout: post
 icon: fa-lightbulb
 icon-style: regular
 ---
+
 See the icon?
 
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.

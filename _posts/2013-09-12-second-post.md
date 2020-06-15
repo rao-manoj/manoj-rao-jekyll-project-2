@@ -1,5 +1,6 @@
 ---
 title: Second Post
+date: 2013-09-12 00:00:00 Z
 author: Chris
 layout: post
 ---
