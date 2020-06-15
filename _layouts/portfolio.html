@@ -2,7 +2,7 @@
 layout: default
 ---
 {%- assign _projects = site.posts | sort: 'date' | reverse | where: "category","project"  -%}
-{%- include header_2.html scrolly_nav=_projects -%}
+{%- include header_3.html scrolly_nav=_projects -%}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
@@ -11,7 +11,7 @@ layout: default
 	<!-- Posts List -->
 	{%- for _project in _projects -%}
 		{%- capture _title -%}
-			<a href="{{- _project.url | absolute_url -}}">{{- _post.title -}}</a>
+			<a href="{{- _project.url | absolute_url -}}">{{- _project.title -}}</a>
 		{%- endcapture -%}
 		{%- capture _subtitle -%}
 			{% if _project.author -%}{{- _project.author }} | {% endif %}
